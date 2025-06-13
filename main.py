@@ -26,16 +26,16 @@ def init_db():
     db = SessionLocal()
     if not db.query(URLMap).first():
         initial_data = [
-            ("abc123", "https://www.example.com/page1"),
-            ("xyz789", "https://www.openai.com/research"),
-            ("short1", "https://github.com"),
-            ("short2", "https://news.ycombinator.com"),
-            ("short3", "https://www.reddit.com"),
-            ("short4", "https://docs.python.org/3/"),
-            ("short5", "https://fastapi.tiangolo.com/"),
-            ("short6", "https://render.com"),
-            ("short7", "https://azure.microsoft.com"),
-            ("short8", "https://stackoverflow.com"),
+            ("1", "https://www.mymax.com/test/testeer"),
+            ("2", "https://dataloader.io/"),
+            ("3", "https://github.com"),
+            ("4", "https://https://maxcu.okta.com/app/salesforce/exk1qh5gqozPcHE6R1d8/slo/saml"),
+            ("5", "https://www.reddit.com"),
+            ("6", "https://docs.python.org/3/"),
+            ("7", "https://salesforce.com/"),
+            ("8", "https://render.com"),
+            ("9", "https://azure.microsoft.com"),
+            ("10", "https://stackoverflow.com"),
         ]
         for short, long in initial_data:
             db.add(URLMap(short_code=short, long_url=long))
